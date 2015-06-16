@@ -65,6 +65,8 @@
 {
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
 
+    NSLog(@"width : %f", screenBounds.size.width);
+    NSLog(@"height: %f", screenBounds.size.height);
 #if __has_feature(objc_arc)
         self.window = [[UIWindow alloc] initWithFrame:screenBounds];
 #else
